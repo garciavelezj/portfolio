@@ -1,3 +1,9 @@
 .h1 {
     color: #301934;
 }
+
+.main {
+    height: 600px;
+    width: 100%;
+    background-color: #ffe4e1;
+}
