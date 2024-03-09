@@ -3,7 +3,7 @@
 }
 
 .main {
-    height: 600px;
+    height: 100px;
     width: 100%;
     background-color: #ffe4e1;
 }
@@ -11,4 +11,10 @@
 .logo {
     height: 100px;
     width: 100px;
+}
+
+.menu {
+    height: 150px;
+    width: 100%;
+    background-color: #faf9f6;
 }
