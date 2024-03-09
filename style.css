@@ -13,6 +13,10 @@
     width: 100px;
 }
 
+.center {
+    margin: auto;
+}
+
 .menu {
     height: 150px;
     width: 100%;
