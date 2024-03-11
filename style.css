@@ -1,3 +1,12 @@
+:root {
+    --sidebar-background: #fff0f5;
+    --content-background: #fffaf0;
+    --main-text-color: #000;
+    --accent-color: #fff;
+    --button-color: #fff;
+    --button-hover: #fff;
+}
+
 .h1 {
     color: #301934;
     font-size: 24px;
@@ -10,13 +19,13 @@
 .left {
     height: 100%;
     width: 25%;
-    background-color: #fff0f5;
+    background-color: var(--sidebar-background);
 }
 
 .right {
     height: 100%;
     width: 75%;
-    background-color: #fffaf0;
+    background-color: var(--content-background);
 }
 
 .logo {
