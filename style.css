@@ -2,10 +2,20 @@
     color: #301934;
 }
 
-.main {
-    height: 100px;
-    width: 100%;
+.container {
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 25%;
     background-color: #ffe4e1;
+}
+
+.right {
+    height: 100%;
+    width: 75%;
+    background-color: #faf9f6;
 }
 
 .logo {
@@ -15,10 +25,4 @@
 
 .center {
     text-align: center;
-}
-
-.menu {
-    height: 150px;
-    width: 100%;
-    background-color: #faf9f6;
 }
