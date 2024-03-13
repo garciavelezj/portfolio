@@ -15,7 +15,7 @@ html {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 .typed {
