@@ -19,7 +19,7 @@ html {
 }
 
 .typed {
-    width: 19ch;
+    width: 22ch;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
