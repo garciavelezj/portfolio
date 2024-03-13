@@ -7,17 +7,6 @@
     --button-hover: #fff;
 }
 
-.h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: 50%;
-    font-size: 24px;
-}
-
-.span {
-    color: #e6e6fa;
-}
-
 .container {
     display: flex;
 }
@@ -178,4 +167,15 @@
     to {
         transform: translateY(-2000px);
     }
+}
+
+.h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 24px;
+}
+
+.span {
+    color: #e6e6fa;
 }
