@@ -9,6 +9,10 @@
     --dark: #000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
@@ -43,6 +47,14 @@ p {
     color: var(--main-text-color);
     font-size: 20px;
     text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
 
 a {
@@ -143,8 +155,63 @@ h3 {
 
 .container {
     display: flex;
-    height: 800px;
+    height: 900px;
     width: 100%;
+}
+
+.project-container {
+    display: flex;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project-photo {
+    height: 300px;
+    width: 500px;
+}
+
+h3.project-title {
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.my-buttons {
+    height: 50px;
+    width: 200px;
+    border: 3px solid var(--main-color);
+    text-transform: uppercase;
+    color: var(--main-color);
+    background-color: var(--dark);
+    border-radius: 15px;
+    margin-right: 150px;
+}
+
+.my-buttons:hover {
+    background-color: var(--dark);
+    border: 3px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 15px;
+}
+
+.my-buttons:active {
+    background-color: var(--dark);
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 15px;
 }
 
 .left {
