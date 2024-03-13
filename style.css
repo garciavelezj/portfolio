@@ -19,7 +19,7 @@ html {
 }
 
 .typed {
-    width: 19ch;
+    width: 22ch;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -192,18 +192,18 @@ h3.project-title {
 .my-buttons {
     height: 50px;
     width: 200px;
-    border: 3px solid var(--main-color);
     text-transform: uppercase;
-    color: var(--main-color);
-    background-color: var(--dark);
-    border-radius: 15px;
+    color: var(--dark);
+    background-color: var(--main-color);
+    border-radius: 10px;
     margin-right: 150px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .my-buttons:hover {
     background-color: var(--dark);
-    border: 3px solid var(--accent-color);
-    color: var(--accent-color);
+    color: var(--main-color);
     border-radius: 15px;
 }
 
