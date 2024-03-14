@@ -227,6 +227,7 @@ h3.project-title {
     height: 100px;
     width: 100%;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .my-buttons {
@@ -299,5 +300,12 @@ h3.project-title {
     height: 100%;
     width: 500px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 50px;
+}
+
+.contact-div {
+    height: 100%;
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
 }
