@@ -9,13 +9,19 @@
     --dark: #000;
 }
 
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('./fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 .typed {
@@ -89,12 +95,14 @@ h1.pink {
     text-align: center;
     font-size: 50px;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 h2 {
     color: var(--main-color);
     text-align: center;
     font-size: 40px;
+    padding-bottom: 25px;
 }
 
 span {
@@ -146,6 +154,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    padding-bottom: 50px;
 }
 
 .main-links {
@@ -164,10 +173,10 @@ h3 {
     display: flex;
     height: 100%;
     width: 100%;
+    margin-top: 15%;
 }
 
 .project-container {
-    display: flex;
     text-align: center;
     height: 300px;
     width: 100%;
@@ -182,8 +191,23 @@ h3 {
 }
 
 .project-photo {
+    object-fit: cover;
     height: 300px;
     width: 500px;
+}
+
+.learn-more {
+    display: block;
+    line-height: 50px;
+    width: 200px;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--dark);
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h3.project-title {
@@ -196,6 +220,15 @@ h3.project-title {
     width: 50%;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
 .my-buttons {
     height: 50px;
     width: 200px;
@@ -203,7 +236,7 @@ h3.project-title {
     color: var(--dark);
     background-color: var(--main-color);
     border-radius: 10px;
-    margin-right: 150px;
+    margin-right: 50px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -260,4 +293,11 @@ h3.project-title {
     border: 3px solid var(--main-color);
     border-radius: 15px;
     padding: 10px;
+}
+
+.about-div {
+    height: 100%;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }

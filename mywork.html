@@ -9,9 +9,10 @@
    <header>
       <div class="link-container">
          <div class="resume-link">
-            <a href="/pdfs/jessica-garcia-velez-resume.pdf" target="_blank" class="left-link">Resume</a>
+            <a href="./pdfs/jessica-garcia-velez-resume.pdf" target="_blank" class="left-link">Resume</a>
          </div>
          <div class="main-links">
+            <a href="index.html" class="right-link">Home</a>
             <a href="about.html" class="right-link">About</a>
             <a href="mywork.html" class="right-link">My Work</a>
             <a href="contact.html" class="right-link">Contact</a>
@@ -19,16 +20,38 @@
       </div>
    </header>
       <h1 class="pink" id="my-work">My Work</h1>
-      <div class="project-container">
+      <div class="button-container">
+         <button type="button" class="my-buttons" onclick="showAll()">All</button>
+         <button type="button" class="my-buttons" onclick="showDev()">Development</button>
+         <button type="button" class="my-buttons" onclick="showDesign()">Design</button>
+      </div>
+      <div class="project-container" id="dev">
          <div class="column">
-            <img src="/imgs/fhs.png" alt="project for flagler humane society" class="project-photo">
+            <img src="./imgs/fhs.png" alt="project for flagler humane society" class="project-photo">
          </div>
          <div class="column">
          <h3 class="project-title">Flagler Humane Society Redesign</h3>
-         <button type="button" class="my-buttons">Learn More</button>
+         <a href="fhs.html" class="learn-more">Learn More</a>
          </div>
+         </div>
+         <div class="project-container" id="design">
+         <div class="column">
+            <img src="./imgs/logo-design.png" alt="logo design" class="project-photo">
+         </div>
+         <div class="column">
+         <h3 class="project-title">Logo Design</h3>
+         <a href="fhs.html" class="learn-more">Learn More</a>
+         </div>
+         </div>
+         <div class="project-container" id="design2">
+            <div class="column">
+               <img src="./imgs/newhope.png" alt="new hope animal shelter" class="project-photo">
+            </div>
+            <div class="column">
+            <h3 class="project-title">New Hope Animal Shelter Prototype</h3>
+            <a href="fhs.html" class="learn-more">Learn More</a>
+            </div>
       </div>
-      <h2 id="contact">Contact Me</h2>
       <script src="script.js"></script>
  </body>
 </html>
