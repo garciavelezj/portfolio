@@ -162,7 +162,7 @@ h3 {
 
 .container {
     display: flex;
-    height: 900px;
+    height: 100%;
     width: 100%;
 }
 
