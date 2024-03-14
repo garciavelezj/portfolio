@@ -84,6 +84,13 @@ h1 {
     margin: auto;
 }
 
+h1.pink {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
 h2 {
     color: var(--main-color);
     text-align: center;
@@ -109,7 +116,7 @@ h3 {
     background-color: #000;
 }
 
-#myBtn {
+#button-scroll {
     display: none; 
     position: fixed; 
     bottom: 20px; 
@@ -127,7 +134,7 @@ h3 {
     font-weight: bold;
   }
   
-  #myBtn:hover {
+  #button-scroll:hover {
     background-color: var(--dark);
     border: 3x solid var(--main-color);
     border-radius: 10px;
