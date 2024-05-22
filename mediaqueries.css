@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    .single-project-container {
+        margin: 20px auto;
+        width:1000px;
+        height: 100%;
+        background-color:#fff;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    #about {
+        display: block;
+    }
+}

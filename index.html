@@ -1,29 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="mediaqueries.css">
     <title>My Portfolio</title>
  </head>
 <body>
-   <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
    <header>
-      <div class="link-container">
-         <div class="resume-link">
-            <a href="./pdfs/jessica-garcia-velez-resume.pdf" target="_blank" class="left-link">Resume</a>
-            <a href="https://github.com/garciavelezj" target="_blank" class="left-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/jessica-garcia-velez-711100195/" target="_blank" class="left-link">LinkedIn</a>
+      <nav id="desktop-nav">
+         <div class="logo">Jessica Garcia-Velez</div>
+         <div>
+            <ul class="nav-links">
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+               </ul>
          </div>
-         <div class="main-links">
-            <a href="index.html" class="right-link">Home</a>
-            <a href="about.html" class="right-link">About</a>
-            <a href="mywork.html" class="right-link">My Work</a>
-            <a href="contact.html" class="right-link">Contact</a>
+      </nav>
+      <nav id="hamburger-nav">
+         <div class="logo">Jessica Garcia-Velez</div>
+         <div class="hamburger-menu">
+         <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
          </div>
       </div>
+      </nav>
    </header>
-   <div class="container">
-      <h1 class="typed">Hello, my name is <span>Jessica</span>.</h1>
+   <section id="profile">
+      <div class="section_pic-container">
+         <img class="about-img" src="./imgs/about.png" alt="Jessica Garcia-Velez profile picture">
+      </div>
+      <div class="section_text">
+         <p class="section_text_p1">Hello, I'm</p>
+         <h1 class="title">Jessica Garcia-Velez</h1>
+         <p class="section_text_p2">Frontend Designer/Developer</p>
+         <div class="button_container">
+            <button class="button button-color-2" type="button" onclick="window.open('./pdfs/general-resume.pdf')">Resume</button>
+            <button class="button button-color-1" type="button" onclick="window.open('http://www.linkedin.com/in/jessica-garcia-velez-711100195/','resizable=yes')">LinkedIn</button>
+      </div>
+      </div>
+      </section>
+   <section id="about">
+      <h1 class="title">A Little About Me</h1>
+      <div class="section-container">
+         <div class="section_text">
+            <p class="about_text section_text_p1">I'm a passionate frontend designer and developer located in Daytona Beach, Florida. Recently graduated from the University of Central Florida with a Bachelor's degree in Digital Media: Web and Social Platforms, I'm eager to apply my skills and knowledge to build visually appealing and user-friendly websites and applications. I can work independently to deliver high-quality solutions as well as collaborate effectively with cross-functional teams. I thrive in environments that foster creativity and innovation, and I am able to adapt well through my communication with others. When I am not working, I am usually knitting or hanging out with my dog.</p>
+      </div>
+      </div>
+      </section>
+
+   <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+         <div class="single-project-container">
+            <div class="project-description">
+               <h2 class="project-title">Flagler Humane Society</h2>
+               <p class="project-text">A redesign of the Flagler Humane Society website completed by a team of 5. The goal was to create a more modern and user-friendly website that would make it easier to use and navigate.</p>
+               <div class="skills-container">
+                  <span class="skill">Wordpress</span>
+                  <span class="skill">Figma</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">JavaScript</span>
+               </div>
+                  <button class="button button-color-2" type="button" onclick="window.location.href='./fhs.html'">Learn More</button>
+            </div>
+            <div class="project-img">
+               <img src="./imgs/flagler-mockup.png" alt="Flagler Humane Society Mockup">
+            </div>
+      </div>
+      <div class="single-project-container">
+         <div class="project-description">
+            <h2 class="project-title">Yarn Haven Studio</h2>
+            <p class="project-text">Web mockup designs for a yarn store business. This 16-page mockup contains features such as a product page, shopping cart page, account creation, and a rewards system for members.</p>
+            <div class="skills-container">
+               <span class="skill">Figma</span>
+            </div>
+               <button class="button button-color-2" type="button" onclick="window.location.href='./fhs.html'">Learn More</button>
+         </div>
+         <div class="project-img">
+            <img src="./imgs/yarn-haven-mockup.png" alt="Yarn Haven Studio Mockup">
+         </div>
    </div>
+   <div class="single-project-container">
+      <div class="project-description">
+         <h2 class="project-title">Logo Design</h2>
+         <p class="project-text">Simple business logo design created with Adobe Illustrator.</p>
+         <div class="skills-container">
+            <span class="skill">Adobe Illustrator</span>
+         </div>
+      </div>
+      <div class="project-img">
+         <img src="./imgs/logo-design-2.png" alt="Rainbow Business Logo Design">
+      </div>
+      </div>
+      </div>
+      </section>
+<section id="contact">
+      <h1 class="title">Contact Me!</h1>
+      <div class="section-container">
+         <div class="section-text">
+            <p class="contact-text section_text_p1">I'm currently looking for new opportunities to grow and learn. If you have any questions or would like to work together, please feel free to reach out to me!</p>
+            <div class="contact-links">
+                  <button class="button button-color-2" type="button" onclick="window.location.href='mailto:garciavelezjessica@proton.me'">Email Me!</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
       <script src="script.js"></script>
  </body>
 </html>

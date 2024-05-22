@@ -1,22 +1,12 @@
 :root {
-    --sidebar-background: #fff0f5;
-    --content-background: #fffaf0;
-    --main-text-color: #fff;
-    --accent-color: #fff;
-    --button-color: #fff;
-    --button-hover: #fff;
-    --main-color: #ffb6c1;
-    --dark: #000;
-}
-
-form {
-    width: 300px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-html {
-    scroll-behavior: smooth;
+    --taupe: #463F3A;
+    --isabelline: #F4F3EE;
+    --lightbrown: #8A817C;
+    --silver: #BCB8B1;
+    --french-gray: #ADB5BD;
+    --black: #000;
+    --white: #fff;
+    --outer-space: #495057;
 }
 
 @font-face {
@@ -24,51 +14,24 @@ html {
     src: url('./fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
-.typed {
-    width: 22ch;
-    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-.photo-div {
-    text-align: center;
-    padding: 50px;
-}
-
-ul {
-    text-align: center;
-    font-size: 24px;
-    list-style-type: none;
-}
-
-li {
-    padding: 5px;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--white);
     color: var(--main-text-color);
     font-family: 'Montserrat';
 }
 
 p {
-    color: var(--main-text-color);
+    color: var(--black);
     font-size: 20px;
-    text-align: center;
 }
 
 .left {
@@ -79,249 +42,303 @@ p {
     text-align: right;
 }
 
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
 a {
-    color: var(--main-color);
+    color: var(--black);
     text-decoration: none;
-    font-size: 20px;
+    text-decoration-color: white;
 }
 
 a:hover {
-    color: var(--accent-color);
+    background-color: ;
+    color: var(--french-gray);
+    text-decoration: underline;
+    text-underline-offset: .8rem;
+    text-decoration-color: var(--melon);
 }
 
 a:active {
-    color: var(--main-color);
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-.links {
-    padding-top: 30px;
-    padding-right: 50px;
-    padding-left: 50px;
+.logo {
+    font-size: 2rem;
 }
 
-h1 {
-    color: var(--main-text-color);
-    text-align: center;
-    font-size: 50px;
-    margin: auto;
+.logo:hover {
+    cursor: default;
 }
 
-h1.pink {
-    color: var(--main-color);
-    text-align: center;
-    font-size: 50px;
-    margin: auto;
-    padding-bottom: 50px;
+#hamburger-nav {
+    display: none;
 }
 
-h2 {
-    color: var(--main-color);
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 25px;
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
 }
 
-span {
-    color: var(--main-color);
-}
-
-h3 {
-    color: var(--main-text-color);
-    text-align: center;
-    font-size: 30px;
-    margin: auto;
-}
-
-.nav-bar {
+.hamburger-icon {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    background-color: #000;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 }
 
-#myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    left: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: var(--main-color); 
-    color: var(--dark); 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 20px; 
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  #myBtn:hover {
-    background-color: var(--dark);
-    border: 3x solid var(--main-color);
-    border-radius: 10px;
-    color: var(--main-color);
-  }
-
-.link-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding-bottom: 50px;
-}
-
-.main-links {
-    text-align: right;
-}
-
-.right-link {
-    margin-right: 50px;
-}
-
-.left-link {
-    margin-left: 50px;
-}
-
-.container {
-    display: flex;
-    height: 100%;
+.hamburger-icon span {
     width: 100%;
-    margin-top: 15%;
+    height: 2px;
+    background-color: var(--black);
+    transition: all 0.3 ease-in-out;
 }
 
-.project-container {
-    text-align: center;
-    height: 300px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
 }
 
-.project-container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.project-photo {
-    object-fit: cover;
-    height: 300px;
-    width: 500px;
-}
-
-.learn-more {
+.menu-links a {
     display: block;
-    line-height: 50px;
-    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+section {
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    text-align: center;
     justify-content: center;
-    text-transform: uppercase;
-    color: var(--dark);
-    background-color: var(--main-color);
-    border-radius: 10px;
-    margin-right: 150px;
-    font-size: 20px;
-    font-weight: bold;
+    margin-top: 50px;
 }
 
-h3.project-title {
-    text-align: left;
-    padding-bottom: 200px;
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
 }
 
-.column {
-    float: left;
-    width: 50%;
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.section_text_p1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    gap: 1rem;
 }
 
-.my-buttons {
-    height: 50px;
-    width: 200px;
+.button {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
     text-transform: uppercase;
-    color: var(--dark);
-    background-color: var(--main-color);
-    border-radius: 10px;
-    margin-right: 50px;
-    font-size: 20px;
-    font-weight: bold;
 }
 
-.my-buttons:hover {
-    background-color: var(--dark);
-    color: var(--main-color);
-    border-radius: 15px;
+.button-color-1, .button-color-2 {
+    border: var(--outer-space) 0.1rem solid;
 }
 
-.my-buttons:active {
-    background-color: var(--dark);
-    border: 3px solid var(--main-color);
-    color: var(--main-color);
-    border-radius: 15px;
+.button-color-1:hover, .button-color-2:hover {
+    cursor: pointer;
 }
 
-.left {
-    height: 100%;
-    width: 25%;
-    background-color: var(--sidebar-background);
+.button-color-1, .button-color-2:hover {
+    background: var(--outer-space);
+    color: var(--white);
 }
 
-.right {
-    height: 100%;
-    width: 75%;
-    background-color: var(--content-background);
+.button-color-1:hover {
+    background: var(--black);
+    color: var(--white);
 }
 
-.logo {
-    height: 100px;
-    width: 100px;
+.button-color-2 {
+    background: none;
 }
 
-.center {
-    text-align: center;
+.button-color-2:hover {
+    border: var(--white) 0.1rem solid;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    gap: 20px;
-    padding: 20px;
+.button-container {
+    gap: 1rem;
+}
+
+.about_text {
+    display: flex;
     justify-content: center;
+    width: 800px;
 }
 
-.grid-item {
-    border: 3px solid var(--accent-color);
-    border-radius: 15px;
-    padding: 10px;
+.projects-container {
+    display: block;
+    margin-top: 50px;
 }
 
-.grid-item:hover {
-    border: 3px solid var(--main-color);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.about-div {
+.single-project-container {
+    margin: 20px auto;
+    width:1000px;
     height: 100%;
-    width: 500px;
-    margin: 0 auto;
-    padding: 50px;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.contact-div {
-    height: 100%;
-    width: 500px;
-    margin: 0 auto;
-    padding: 50px;
+    .project-description {
+      background-color:#fff;
+      padding:50px;
+      color:#fff;
+      flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+      font-size:40px;
+    }
+
+    .project-title {
+        color: #000;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .project-img {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .project-img img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+      }
+
+.about-img {
+    border-radius: 500px;`
 }
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px; /* Add some spacing between skills and button */
+    margin-top: 10px;
+  }
+  
+  .skill {
+    background-color: var(--outer-space);
+    color: var(--white);
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
