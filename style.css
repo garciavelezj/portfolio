@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    background-color: ;
+    background-color: var(--outer-space);
     color: var(--french-gray);
     text-decoration: underline;
     text-underline-offset: .8rem;
@@ -322,7 +322,7 @@ section {
       }
 
 .about-img {
-    border-radius: 500px;`
+    border-radius: 500px;
 }
 
 .skills-container {
