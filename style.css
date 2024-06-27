@@ -228,6 +228,7 @@ section {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .button-container {
@@ -366,10 +367,10 @@ section {
   }
 
   .slider-container .images .image-item {
-    width: 800px;
+    width: 50rem;
     height: 100%;
     object-fit: cover;
-    padding-right: 50px;
+    padding-right: 3.125rem;
   }
 
   .project-step {
@@ -377,9 +378,9 @@ section {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 800px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    width: 50rem;
   }
 
   .project-step-title {
@@ -387,7 +388,28 @@ section {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 100px;
-    width: 800px;
+    margin-top: 6.25rem;
+    width: 50rem;
+  }
+
+  .yarn-img {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 28%;
+    width: 50rem;
+    height: 100%;
+    padding: 1.25rem;
+    border: 2px solid var(--french-gray);
+    border-radius: 10px;
+  }
+
+  .contact-text {
+    width: 50rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .contact-links {
+    margin-bottom: 6.25rem;
   }
 
